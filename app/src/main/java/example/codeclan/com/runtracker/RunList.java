@@ -12,7 +12,7 @@ public class RunList {
 
     public RunList() {
         list = new ArrayList<Run>();
-        list.add(new Run("20 April",10.0, 45, "10k run on the treadmill"));
+        list.add(new Run("20 April", 10.0, 45, "10k run on the treadmill"));
         list.add(new Run("19 April", 0.0 , 0, ""));
         list.add(new Run("18 April", 5.45, 27, "ran around Arthur's seat"));
         list.add(new Run("17 April", 0.0, 0, ""));

@@ -26,13 +26,15 @@ public class RunListViewActivity extends AppCompatActivity {
 
     }
 
-    public void getRun(View listItem){
-        Run run = (Run) listItem.getTag();
-        Log.d("Run notes: ", run.getNotes());
-    }
+//    public void getRun(View listItem){
+//        Run run = (Run) listItem.getTag();
+//        Log.d("Run notes: ", run.getNotes());
+//    }
 
-    public void onRunDetailButtonClicked(View view) {
+    public void onRunDetailButtonClicked(View listItem) {
+
         Intent intent = new Intent(this, RunDetailsActivity.class);
+        intent.putExtra("run_date", "this is a hardcoded string");
         startActivity(intent);
     }
 }
