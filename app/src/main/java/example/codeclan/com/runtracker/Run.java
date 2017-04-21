@@ -12,12 +12,14 @@ public class Run {
     private Double distance;
     private int time_minutes;
     private String notes;
+//    private int pace;
 
     public Run(String run_date, Double distance, Integer time_minutes, String notes){
         this.run_date = run_date;
         this.distance = distance;
         this.time_minutes = time_minutes;
         this.notes = notes;
+//        this.pace = pace;
     }
 
     public String getDate() {
@@ -35,5 +37,9 @@ public class Run {
     public String getNotes() {
         return notes;
     }
+
+//    public String getPace() {
+//        return Double getDistance()/getTime_minutes();
+//    }
 
 }

@@ -34,7 +34,11 @@ public class RunListViewActivity extends AppCompatActivity {
     public void onRunDetailButtonClicked(View listItem) {
 
         Intent intent = new Intent(this, RunDetailsActivity.class);
-        intent.putExtra("run", getRun(listItem).getDate() );
+        Bundle extras = new Bundle();
+        extras.putString("run_date", getRun(listItem).getDate() );
+        extras.putDouble("distance", getRun(listItem).getDistance() );
+        extras.putInt("time_minutes", getRun(listItem).getTime_minutes() );
+        intent.putExtras(extras);
         startActivity(intent);
     }
 }

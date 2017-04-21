@@ -5,8 +5,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.codeclan.com.runtracker.RunDetailsActivity"
-    android:id="@+id/run_details">
+    tools:context="example.codeclan.com.runtracker.RunDetailsActivity">
 
     <TextView
         android:id="@+id/run_date"
@@ -16,23 +15,23 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"/>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
 
-        <TextView
-            android:id="@+id/distance"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
 
-        <TextView
+    <TextView
             android:id="@+id/time_minutes"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"/>
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 </LinearLayout>
