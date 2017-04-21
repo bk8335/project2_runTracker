@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RunTracker</string>
+    <string name="run_detail_title">Run Details</string>
 </resources>

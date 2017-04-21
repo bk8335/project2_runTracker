@@ -1,5 +1,6 @@
 package example.codeclan.com.runtracker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,5 +29,10 @@ public class RunListViewActivity extends AppCompatActivity {
     public void getRun(View listItem){
         Run run = (Run) listItem.getTag();
         Log.d("Run notes: ", run.getNotes());
+    }
+
+    public void onRunDetailButtonClicked(View view) {
+        Intent intent = new Intent(this, RunDetailsActivity.class);
+        startActivity(intent);
     }
 }
