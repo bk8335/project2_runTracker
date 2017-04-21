@@ -19,8 +19,8 @@ public class RunDetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
 
-        String run_date = extras.getString("run_date");
-        runDetailText.setText(run_date);
+        String run = extras.getString("run");
+        runDetailText.setText(run);
 
     }
 }

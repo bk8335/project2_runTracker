@@ -5,7 +5,8 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.codeclan.com.runtracker.RunDetailsActivity">
+    tools:context="example.codeclan.com.runtracker.RunDetailsActivity"
+    android:id="@+id/run_details">
 
     <TextView
         android:id="@+id/run_date"
