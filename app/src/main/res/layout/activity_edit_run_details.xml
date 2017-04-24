@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="example.codeclan.com.runtracker.EditRunDetailsActivity">
 
-    <TextView
-        android:text="this is the edit run details page"
+    <EditText
+        android:id="@+id/question_input_date"
+        android:inputType="text"
+        android:hint="Enter the date you did the run (e.g. 20 April)"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/question_input_distance"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="How far did you run (km)"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/question_input_time"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="How long did it take (minutes)"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/question_input_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Any other details you would like to add?"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/new_run_button"
+        android:onClick="onUpdateRunButtonClicked"
+        android:text="Update run details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
+
+

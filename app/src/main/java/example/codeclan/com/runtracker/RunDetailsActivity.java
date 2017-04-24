@@ -53,11 +53,10 @@ public class RunDetailsActivity extends AppCompatActivity {
     protected void onEditButtonClicked(View savedInstanceState) {
         Intent intent = new Intent(this, EditRunDetailsActivity.class);
         Bundle extras = new Bundle();
-        extras.putString("run_date", runDateText.toString() );
-        extras.putString("distance", runDistanceText.toString());
-        extras.putString("time_minutes", runTimeMinutesText.toString());
-        extras.putString("run_notes", runNotes.toString());
-        extras.putString("run_pace", runPace.toString());
+        extras.putString("run_date", runDateText.getText().toString() );
+        extras.putString("distance", runDistanceText.getText().toString());
+        extras.putString("time_minutes", runTimeMinutesText.getText().toString());
+        extras.putString("run_notes", runNotes.getText().toString());
         intent.putExtras(extras);
         startActivity(intent);
     }
