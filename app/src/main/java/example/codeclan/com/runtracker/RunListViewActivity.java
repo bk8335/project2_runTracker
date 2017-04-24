@@ -58,6 +58,8 @@ public class RunListViewActivity extends AppCompatActivity {
         extras.putString("run_date", getRun(listItem).getDate() );
         extras.putString("distance", getRun(listItem).getDistance().toString() );
         extras.putString("time_minutes", getRun(listItem).getTime_minutes().toString() );
+        extras.putString("run_notes", getRun(listItem).getNotes());
+        extras.putString("run_pace", getRun(listItem).getPace().toString());
         intent.putExtras(extras);
         startActivity(intent);
 

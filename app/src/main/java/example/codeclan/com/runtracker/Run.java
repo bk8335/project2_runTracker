@@ -13,14 +13,14 @@ public class Run implements Serializable {
     private Double distance;
     private int time_minutes;
     private String notes;
-    private Double pace;
+//    private Double pace;
 
     public Run(String run_date, Double distance, Integer time_minutes, String notes){
         this.run_date = run_date;
         this.distance = distance;
         this.time_minutes = time_minutes;
         this.notes = notes;
-        this.pace = time_minutes / distance;
+//        this.pace = time_minutes / distance;
     }
 
     public String getDate() {
@@ -39,8 +39,15 @@ public class Run implements Serializable {
         return notes;
     }
 
-    public Double getPace() {
-        return pace;
+    public String getPace() {
+        //        get precise number - rounded down number * 60 + rounded down number
+        Double mins = Math.floor(time_minutes / distance);
+        Double secs = Math.floor(((time_minutes/distance) - Math.floor(time_minutes / distance)) * 60);
+
+        String minsRounded = String.format("%.0f", mins);
+        String secsRounded = String.format("%.0f", secs);
+
+        return minsRounded + ":" + secsRounded;
     }
 
 }

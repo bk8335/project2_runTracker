@@ -36,7 +36,7 @@ public class RunDetailsActivity extends AppCompatActivity {
         String time_minutes = "Time: " + extras.getString("time_minutes") + " minutes";
 
         String run_notes = "Notes: " + extras.getString("run_notes");
-        String pace = "Pace: " + extras.getString("pace") + " min/km";
+        String pace = "Pace: " + extras.getString("run_pace") + " min/km";
 
 
         runDateText.setText(run_date);
