@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/question_input_date"
+        android:inputType="date"
         android:hint="Enter the date you did the run (e.g. 20 April)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

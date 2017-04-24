@@ -2,6 +2,7 @@ package example.codeclan.com.runtracker;
 
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by user on 20/04/2017.
@@ -13,14 +14,12 @@ public class Run implements Serializable {
     private Double distance;
     private int time_minutes;
     private String notes;
-//    private Double pace;
 
     public Run(String run_date, Double distance, Integer time_minutes, String notes){
         this.run_date = run_date;
         this.distance = distance;
         this.time_minutes = time_minutes;
         this.notes = notes;
-//        this.pace = time_minutes / distance;
     }
 
     public String getDate() {
@@ -40,7 +39,7 @@ public class Run implements Serializable {
     }
 
     public String getPace() {
-        //        get precise number - rounded down number * 60 + rounded down number
+        //        ((get precise number - rounded down number) * 60) + rounded down number
         Double mins = Math.floor(time_minutes / distance);
         Double secs = Math.floor(((time_minutes/distance) - Math.floor(time_minutes / distance)) * 60);
 

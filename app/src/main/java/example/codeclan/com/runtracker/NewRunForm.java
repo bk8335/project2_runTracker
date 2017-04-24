@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class NewRunForm extends AppCompatActivity {
 
@@ -40,6 +42,8 @@ public class NewRunForm extends AppCompatActivity {
 //        if not expecting a string, need to do parseint or similar to put it in the required format.
 
         String dateAnswer = question_input_date.getText().toString();
+//        SimpleDateFormat datedateAnswer = new SimpleDateFormat("dd-mmm-yyyy");
+//        java.util.Date stringDate = datedateAnswer.parse(dateAnswer);
 
         String distanceAnswer = question_input_distance.getText().toString();
         double doubleDistanceAnswer = Double.parseDouble(distanceAnswer);

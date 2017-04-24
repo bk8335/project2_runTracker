@@ -3,6 +3,8 @@ package example.codeclan.com.runtracker;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import static example.codeclan.com.runtracker.R.id.pace;
@@ -15,6 +17,7 @@ public class RunDetailsActivity extends AppCompatActivity {
     TextView runTimeMinutesText;
     TextView runNotes;
     TextView runPace;
+    Button editButton;
 
 
     @Override
@@ -45,5 +48,17 @@ public class RunDetailsActivity extends AppCompatActivity {
         runNotes.setText(run_notes);
         runPace.setText(pace);
 
+    }
+
+    protected void onEditButtonClicked(View savedInstanceState) {
+        Intent intent = new Intent(this, EditRunDetailsActivity.class);
+        Bundle extras = new Bundle();
+        extras.putString("run_date", runDateText.toString() );
+        extras.putString("distance", runDistanceText.toString());
+        extras.putString("time_minutes", runTimeMinutesText.toString());
+        extras.putString("run_notes", runNotes.toString());
+        extras.putString("run_pace", runPace.toString());
+        intent.putExtras(extras);
+        startActivity(intent);
     }
 }
