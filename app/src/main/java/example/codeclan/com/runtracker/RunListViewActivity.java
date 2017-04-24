@@ -1,9 +1,13 @@
 package example.codeclan.com.runtracker;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -23,7 +27,23 @@ public class RunListViewActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(runAdapter);
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.run_list_view_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_new_run) {
+            Intent intent = new Intent(this, NewRunForm.class);
+            startActivity(intent);
+            return true;
+        }
+        return onOptionsItemSelected(item);
     }
 
     public Run getRun(View listItem){
@@ -36,9 +56,10 @@ public class RunListViewActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RunDetailsActivity.class);
         Bundle extras = new Bundle();
         extras.putString("run_date", getRun(listItem).getDate() );
-        extras.putDouble("distance", getRun(listItem).getDistance() );
-        extras.putInt("time_minutes", getRun(listItem).getTime_minutes() );
+        extras.putString("distance", getRun(listItem).getDistance().toString() );
+        extras.putString("time_minutes", getRun(listItem).getTime_minutes().toString() );
         intent.putExtras(extras);
         startActivity(intent);
+
     }
 }

@@ -15,10 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RunDetailsActivity"
+        <activity
+            android:name=".RunDetailsActivity"
             android:label="@string/run_detail_title"
-            android:parentActivityName=".RunListViewActivity" >
-        </activity>
+            android:parentActivityName=".RunListViewActivity"></activity>
+        <activity android:name=".NewRunForm"></activity>
     </application>
 
 </manifest>

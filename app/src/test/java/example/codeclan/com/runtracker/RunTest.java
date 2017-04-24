@@ -17,8 +17,9 @@ public class RunTest {
         Run run = new Run("23 April", 30.0, 150, "took bloody ages" );
         assertEquals("23 April", run.getDate());
         assertEquals(30.0, run.getDistance());
-        assertEquals(150, run.getTime_minutes());
+        assertEquals(151, run.getTime_minutes()+1);
         assertEquals("took bloody ages", run.getNotes());
+        assertEquals(5.0, run.getPace());
     }
 
 }
