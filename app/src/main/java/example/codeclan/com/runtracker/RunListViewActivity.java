@@ -20,9 +20,7 @@ public class RunListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.run_list);
 
-        RunList runList = new RunList();
-        ArrayList<Run> list = runList.getList();
-
+        ArrayList<Run> list = SharedPreferencesManager.getRunList(this);
         RunListAdapter runAdapter = new RunListAdapter(this, list);
 
         ListView listView = (ListView) findViewById(R.id.list);
