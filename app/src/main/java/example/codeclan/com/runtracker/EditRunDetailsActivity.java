@@ -58,6 +58,12 @@ public class EditRunDetailsActivity extends AppCompatActivity {
 
         String dateAnswer = runDateText.getText().toString();
 
+        Bundle bundle = getIntent().getExtras();
+
+        String dateToCheck = bundle.getString("run_date");
+
+        String distanceToCheck = bundle.getString("distance");
+
 
         String distanceAnswer = runDistanceText.getText().toString();
         double doubleDistanceAnswer = Double.parseDouble(distanceAnswer);
@@ -70,16 +76,19 @@ public class EditRunDetailsActivity extends AppCompatActivity {
         Log.d(getClass().toString(), "on update run button clicked");
 
 
+
+
         ArrayList<Run> runList = SharedPreferencesManager.getRunList(this);
         Run foundRun = null;
         for(Run run : runList){
-            if(run.getDate().equals(dateAnswer) && run.getDistance().toString().equals(distanceAnswer)) {
+            if(run.getDate().equals(dateToCheck) && run.getDistance().toString().equals(distanceToCheck)) {
                 run.setRunDate(dateAnswer);
                 run.setDistance(doubleDistanceAnswer);
                 run.setTime_minutes(intTimeAnswer);
                 run.setNotes(noteAnswer);
                 foundRun = new Run(dateAnswer, doubleDistanceAnswer, intTimeAnswer, noteAnswer);
                 runList.remove(run);
+                runList.add(foundRun);
                 Log.d(getClass().toString(), "this should mean there is a positive match");
             }
         }
@@ -92,7 +101,6 @@ public class EditRunDetailsActivity extends AppCompatActivity {
         //add it back to runlist
 
 
-        runList.add(foundRun);
 
         SharedPreferencesManager.setRunList(this, runList);
 

@@ -108,12 +108,24 @@
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/edit_button"
             android:onClick="onEditButtonClicked"
             android:text="Edit run details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:onClick="onDeleteButtonClicked"
+            android:text="Delete Run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -20,7 +20,8 @@
             android:label="@string/run_detail_title"
             android:parentActivityName=".RunListViewActivity" />
         <activity android:name=".NewRunForm" />
-        <activity android:name=".EditRunDetailsActivity"></activity>
+        <activity android:name=".EditRunDetailsActivity" />
+        <activity android:name=".AllRunsActivity"></activity>
     </application>
 
 </manifest>
