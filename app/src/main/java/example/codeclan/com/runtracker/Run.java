@@ -26,6 +26,7 @@ public class Run implements Serializable {
         return run_date;
     }
 
+
     public Double getDistance() {
         return distance;
     }
@@ -49,4 +50,20 @@ public class Run implements Serializable {
         return minsRounded + ":" + secsRounded;
     }
 
+
+    public void setRunDate(String runDate) {
+        this.run_date = runDate;
+    }
+
+    public void setDistance(Double distance) {
+        this.distance = distance;
+    }
+
+    public void setTime_minutes(int time_minutes) {
+        this.time_minutes = time_minutes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
 }

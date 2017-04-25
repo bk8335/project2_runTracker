@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/run_date"
         android:layout_width="100dp"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:textSize="30sp" />

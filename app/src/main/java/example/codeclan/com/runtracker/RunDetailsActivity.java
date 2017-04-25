@@ -35,11 +35,11 @@ public class RunDetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String run_date = extras.getString("run_date");
-        String distance = "Distance: " + extras.getString("distance") + " km";
-        String time_minutes = "Time: " + extras.getString("time_minutes") + " minutes";
+        String distance = extras.getString("distance");
+        String time_minutes = extras.getString("time_minutes");
 
-        String run_notes = "Notes: " + extras.getString("run_notes");
-        String pace = "Pace: " + extras.getString("run_pace") + " min/km";
+        String run_notes = extras.getString("run_notes");
+        String pace = extras.getString("run_pace");
 
 
         runDateText.setText(run_date);
