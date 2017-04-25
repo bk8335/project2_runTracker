@@ -2,4 +2,6 @@
     <string name="app_name">RunTracker</string>
     <string name="run_detail_title">Run Details</string>
     <string name="new_run">Add a new run</string>
+    <string name="home">Home</string>
+    <string name="run_analytics">Total running</string>
 </resources>

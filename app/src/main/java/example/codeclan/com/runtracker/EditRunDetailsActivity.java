@@ -76,7 +76,10 @@ public class EditRunDetailsActivity extends AppCompatActivity {
         Log.d(getClass().toString(), "on update run button clicked");
 
 
-
+        //double find using date and distance to get the particular run
+        //extracting the found run from runlist
+        //use setters for updating
+        //add it back to runlist
 
         ArrayList<Run> runList = SharedPreferencesManager.getRunList(this);
         Run foundRun = null;
@@ -92,15 +95,6 @@ public class EditRunDetailsActivity extends AppCompatActivity {
                 Log.d(getClass().toString(), "this should mean there is a positive match");
             }
         }
-
-
-
-        //double find using date and distance to get the particular run
-        //extracting the found run from runlist
-        //use setters for updating
-        //add it back to runlist
-
-
 
         SharedPreferencesManager.setRunList(this, runList);
 
