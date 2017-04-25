@@ -60,4 +60,9 @@ public class RunDetailsActivity extends AppCompatActivity {
         intent.putExtras(extras);
         startActivity(intent);
     }
+
+    protected  void onDeleteButtonClicked(View somethingSomething) {
+        Intent intent = new Intent(this, RunListViewActivity.class);
+        startActivity(intent);
+    }
 }
