@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/action_total_runs"
-        android:title="@string/run_analytics"/>
+    <item android:id="@+id/action_home_page"
+        android:title="@string/home"/>
+    <item android:id="@+id/action_new_run"
+        android:title="@string/new_run" />
 
 </menu>
