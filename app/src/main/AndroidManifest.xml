@@ -19,20 +19,21 @@
             android:name=".RunDetailsActivity"
             android:label="@string/run_detail_title"
             android:parentActivityName=".RunListViewActivity" />
-
         <activity
             android:name=".NewRunForm"
-            android:label="Add a New Run"/>
-
+            android:label="Add a New Run" />
         <activity
             android:name=".EditRunDetailsActivity"
-            android:label="Edit Run"/>
-
+            android:label="Edit Run" />
         <activity
             android:name=".AllRunsActivity"
-            android:label="Lifetime Running Stats" >
+            android:label="Lifetime Running Stats"/>
 
+        <activity
+            android:name=".PieChartActivity"
+            android:label="Running Chart">
         </activity>
+
     </application>
 
 </manifest>

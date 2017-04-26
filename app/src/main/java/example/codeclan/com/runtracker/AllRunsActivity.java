@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -112,5 +113,10 @@ public class AllRunsActivity extends AppCompatActivity {
         double lapsRequired = (worldCircumference / totalRunDistance()) ;
         String stringLapsRequired = String.format("%.0f", lapsRequired);
         return stringLapsRequired;
+    }
+
+    public void onPieChartButtonClicked(View button) {
+        Intent intent = new Intent(this, PieChartActivity.class);
+        startActivity(intent);
     }
 }
