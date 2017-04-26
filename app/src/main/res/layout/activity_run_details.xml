@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="example.codeclan.com.runtracker.RunDetailsActivity">
+    tools:context="example.codeclan.com.runtracker.RunDetailsActivity"
+    android:background="@drawable/mofarah2">
 
     <TextView
         android:id="@+id/run_date"
@@ -19,112 +20,131 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
 
         <TextView
             android:text="Distance: "
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="24sp"/>
 
         <TextView
             android:id="@+id/distance"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:text=" km"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="24sp"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            >
 
             <TextView
                 android:text="Time: "
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp"/>
 
             <TextView
             android:id="@+id/time_minutes"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp" />
+            android:textSize="30sp" />
 
             <TextView
                 android:text=" minutes"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            >
+
+            <TextView
+                android:text="Pace: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/pace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:text=" min/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            >
 
         <TextView
             android:text="Notes: "
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="24sp"/>
 
             <TextView
             android:id="@+id/run_notes"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"/>
+            android:textSize="30sp"/>
 
         </LinearLayout>
+
+
+
 
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-        <TextView
-            android:text="Pace: "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-            <TextView
-            android:id="@+id/pace"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"/>
-
-            <TextView
-                android:text=" min/km"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_marginTop="20dp">
+            >
         <Button
             android:id="@+id/edit_button"
             android:onClick="onEditButtonClicked"
             android:layout_marginRight="20dp"
             android:text="Edit run details"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/delete_button"
             android:onClick="onDeleteButtonClicked"
             android:text="Delete Run"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content" />
 
         </LinearLayout>

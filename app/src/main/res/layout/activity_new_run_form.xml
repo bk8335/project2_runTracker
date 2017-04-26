@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="example.codeclan.com.runtracker.NewRunForm"
-    android:layout_marginLeft="10dp">
+    android:background="@drawable/mofarah2">
 
     <EditText
         android:id="@+id/question_input_date"
@@ -15,7 +15,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        />
 
 
     <EditText
@@ -25,7 +27,9 @@
         android:layout_height="wrap_content"
         android:hint="How far did you run (km)"
         android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        />
 
     <EditText
         android:id="@+id/question_input_time"
@@ -34,7 +38,9 @@
         android:layout_height="wrap_content"
         android:hint="How long did it take (minutes)"
         android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        />
 
     <EditText
         android:id="@+id/question_input_notes"
@@ -42,7 +48,9 @@
         android:layout_height="wrap_content"
         android:hint="Any other details you would like to add?"
         android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        />
 
     <Button
         android:id="@+id/new_run_button"
@@ -50,6 +58,8 @@
         android:text="Add new run"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        />
 
 </LinearLayout>
