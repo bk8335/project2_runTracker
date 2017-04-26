@@ -35,15 +35,20 @@ public class RunDetailsActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if (item.getItemId() == R.id.action_home_page){
-            Intent intent = new Intent(this, RunListViewActivity.class);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_home_page) {
+            Intent intent = new Intent(this, RunListViewActivity.class );
             startActivity(intent);
             return true;
         }
-        else if (item.getItemId() == R.id.action_total_runs){
-            Intent intent2 = new Intent (this, AllRunsActivity.class);
+        else if (item.getItemId() == R.id.action_new_run) {
+            Intent intent2 = new Intent(this, NewRunForm.class);
             startActivity(intent2);
+            return true;
+        }
+        else if (item.getItemId() == R.id.action_total_runs) {
+            Intent intent3 = new Intent(this, AllRunsActivity.class);
+            startActivity(intent3);
             return true;
         }
         return onOptionsItemSelected(item);
