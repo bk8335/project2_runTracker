@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="example.codeclan.com.runtracker.AllRunsActivity">
+    tools:context="example.codeclan.com.runtracker.AllRunsActivity"
+    android:layout_marginLeft="10dp">
 
     <TextView
+        android:gravity="center"
         android:text="Lifetime Running Stats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,11 +17,13 @@
         android:layout_marginBottom="30dp"/>
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
 
         <TextView
+            android:layout_marginRight="30dp"
             android:text="Total number of runs: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,10 +38,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
     <TextView
+        android:layout_marginRight="45dp"
         android:text="Total Distance Run: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,10 +64,12 @@
 
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
         <TextView
+            android:layout_marginRight="30dp"
             android:text="Time Spent Running: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,10 +89,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp">
         <TextView
+            android:layout_marginRight="100dp"
             android:text="Average pace: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,6 +114,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
