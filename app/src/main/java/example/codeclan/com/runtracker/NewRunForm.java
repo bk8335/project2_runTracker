@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -66,6 +67,8 @@ public class NewRunForm extends AppCompatActivity {
 
         Intent intent = new Intent(this, RunListViewActivity.class);
         startActivity(intent);
+
+        Toast.makeText(NewRunForm.this, R.string.button_toast_new, Toast.LENGTH_LONG).show();
 
     }
 

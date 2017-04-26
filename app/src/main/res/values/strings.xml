@@ -4,4 +4,8 @@
     <string name="new_run">Add a new run</string>
     <string name="home">Home</string>
     <string name="run_analytics">Total running</string>
+
+    <string name="button_toast_new">New run added!</string>
+    <string name="button_toast_edit">Run amended!</string>
+    <string name="button_toast_delete">Run deleted - boo fatty!</string>
 </resources>

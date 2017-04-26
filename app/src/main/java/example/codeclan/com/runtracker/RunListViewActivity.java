@@ -41,6 +41,11 @@ public class RunListViewActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        else if (item.getItemId() == R.id.action_total_runs) {
+            Intent intent2 = new Intent(this, AllRunsActivity.class);
+            startActivity(intent2);
+            return true;
+        }
         return onOptionsItemSelected(item);
     }
 

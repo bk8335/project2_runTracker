@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -87,6 +88,9 @@ public class RunDetailsActivity extends AppCompatActivity {
         extras.putString("run_notes", runNotes.getText().toString());
         intent.putExtras(extras);
         startActivity(intent);
+
+        Toast.makeText(RunDetailsActivity.this, R.string.button_toast_edit, Toast.LENGTH_LONG).show();
+
     }
 
     protected  void onDeleteButtonClicked(View somethingSomething) {
@@ -107,5 +111,8 @@ public class RunDetailsActivity extends AppCompatActivity {
 
         Intent intent2 = new Intent(this, RunListViewActivity.class);
         startActivity(intent2);
+
+        Toast.makeText(RunDetailsActivity.this, R.string.button_toast_delete, Toast.LENGTH_LONG).show();
+
     }
 }
