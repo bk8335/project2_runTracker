@@ -16,6 +16,7 @@ public class AllRunsActivity extends AppCompatActivity {
     TextView totalRunTimeText;
     TextView totalRunPaceText;
     TextView totalRunCountText;
+    TextView totalAroundTheWorld;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,11 +49,13 @@ public class AllRunsActivity extends AppCompatActivity {
         totalRunTimeText = (TextView)findViewById(R.id.total_time);
         totalRunPaceText = (TextView)findViewById(R.id.total_pace);
         totalRunCountText = (TextView)findViewById(R.id.total_run_count);
+        totalAroundTheWorld = (TextView)findViewById(R.id.around_the_world);
 
         totalRunDistanceText.setText(totalRunDistance().toString());
         totalRunTimeText.setText(totalRunTime().toString());
         totalRunPaceText.setText(totalRunPace());
         totalRunCountText.setText(totalRunCount().toString());
+        totalAroundTheWorld.setText(aroundTheWorld());
 
 
     }
@@ -95,5 +98,12 @@ public class AllRunsActivity extends AppCompatActivity {
         }
         return runCount;
 
+    }
+
+    public String aroundTheWorld() {
+        double worldCircumference = 40_075;
+        double lapsRequired = (worldCircumference / totalRunDistance()) ;
+        String stringLapsRequired = String.format("%.0f", lapsRequired);
+        return stringLapsRequired;
     }
 }
