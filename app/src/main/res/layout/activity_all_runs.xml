@@ -155,7 +155,7 @@
         android:onClick="onPieChartButtonClicked"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
-        android:text="Want to see a sexy pie chart?"
+        android:text="Want to see a sexy chart?"
         android:background="@drawable/button_green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
