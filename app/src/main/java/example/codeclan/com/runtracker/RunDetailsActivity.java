@@ -88,8 +88,7 @@ public class RunDetailsActivity extends AppCompatActivity {
         extras.putString("run_notes", runNotes.getText().toString());
         intent.putExtras(extras);
         startActivity(intent);
-
-        Toast.makeText(RunDetailsActivity.this, R.string.button_toast_edit, Toast.LENGTH_LONG).show();
+        
 
     }
 

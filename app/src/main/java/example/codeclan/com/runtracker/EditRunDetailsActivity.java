@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -96,8 +97,11 @@ public class EditRunDetailsActivity extends AppCompatActivity {
             }
         }
 
+
+
         SharedPreferencesManager.setRunList(this, runList);
 
+        Toast.makeText(EditRunDetailsActivity.this, R.string.button_toast_edit, Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(this, RunListViewActivity.class);
         startActivity(intent);
