@@ -8,22 +8,17 @@
     tools:context="example.codeclan.com.runtracker.AllRunsActivity"
     android:layout_marginLeft="10dp">
 
-    <TextView
-        android:gravity="center"
-        android:text="Lifetime Running Stats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_marginBottom="30dp"/>
+
 
     <LinearLayout
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
 
         <TextView
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="25dp"
             android:text="Total number of runs: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,7 +109,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
