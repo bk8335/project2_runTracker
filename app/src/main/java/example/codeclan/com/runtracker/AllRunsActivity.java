@@ -58,6 +58,8 @@ public class AllRunsActivity extends AppCompatActivity {
         totalAroundTheWorld.setText(aroundTheWorld());
 
 
+
+
     }
 
     public Double totalRunDistance() {

@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="example.codeclan.com.runtracker.AllRunsActivity"
-    android:layout_marginLeft="10dp">
+    android:background="@drawable/mofarah2">
+
 
 
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,7 +34,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
@@ -59,7 +60,7 @@
 
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
@@ -84,7 +85,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp">
@@ -111,7 +112,7 @@
     <LinearLayout
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
