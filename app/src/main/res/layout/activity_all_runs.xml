@@ -18,6 +18,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
+
+        <TextView
+            android:text="Total number of runs: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/total_run_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
     <TextView
         android:text="Total Distance Run: "
         android:layout_width="wrap_content"
@@ -27,7 +46,8 @@
     <TextView
         android:id="@+id/total_distance"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="30sp"/>
 
     <TextView
         android:text=" km"
@@ -50,7 +70,8 @@
         <TextView
             android:id="@+id/total_time"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
 
         <TextView
             android:text=" minutes"
@@ -72,7 +93,8 @@
         <TextView
             android:id="@+id/total_pace"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
 
         <TextView
             android:text=" min/km"

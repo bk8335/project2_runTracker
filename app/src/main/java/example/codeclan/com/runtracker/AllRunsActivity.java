@@ -15,6 +15,7 @@ public class AllRunsActivity extends AppCompatActivity {
     TextView totalRunDistanceText;
     TextView totalRunTimeText;
     TextView totalRunPaceText;
+    TextView totalRunCountText;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,26 +47,32 @@ public class AllRunsActivity extends AppCompatActivity {
         totalRunDistanceText = (TextView)findViewById(R.id.total_distance);
         totalRunTimeText = (TextView)findViewById(R.id.total_time);
         totalRunPaceText = (TextView)findViewById(R.id.total_pace);
+        totalRunCountText = (TextView)findViewById(R.id.total_run_count);
 
         totalRunDistanceText.setText(totalRunDistance().toString());
         totalRunTimeText.setText(totalRunTime().toString());
         totalRunPaceText.setText(totalRunPace());
+        totalRunCountText.setText(totalRunCount().toString());
 
 
     }
 
     public Double totalRunDistance() {
-        double runDistance = 10;
+        double runDistance = 0;
         ArrayList<Run> runList = SharedPreferencesManager.getRunList(this);
         for(Run run : runList){
-//            run.getDistance() += runDistance;
+            runDistance += run.getDistance();
         }
 
         return runDistance;
     }
 
     public Integer totalRunTime() {
-        int runTime = 45;
+        int runTime = 0;
+        ArrayList<Run> runList = SharedPreferencesManager.getRunList(this);
+        for(Run run : runList){
+            runTime += run.getTime_minutes();
+        }
         return runTime;
     }
 
@@ -78,5 +85,15 @@ public class AllRunsActivity extends AppCompatActivity {
         String secsRounded = String.format("%.0f", secs);
 
         return minsRounded + ":" + secsRounded;
+    }
+
+    public Integer totalRunCount() {
+        int runCount = 0;
+        ArrayList<Run> runList = SharedPreferencesManager.getRunList(this);
+        for (Run run : runList){
+            runCount ++;
+        }
+        return runCount;
+
     }
 }
